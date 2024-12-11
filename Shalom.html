@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shalom Page - Birthday Edition</title>
+    <style>
+        /* Keyframes for animations */
+        @keyframes frame {
+            from {
+                transform: translateY(-15px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes confetti {
+            0% {
+                transform: translateY(0) rotate(0);
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+
+        /* General styling */
+        body {
+            animation: frame 1s ease-in-out;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+            overflow-x: hidden;
+        }
+        h1 {
+            font-size: 3em;
+            margin-top: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+        }
+        img {
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin: 10px 0;
+        }
+        p {
+            max-width: 90%;
+            margin: auto;
+            padding: 10px;
+            line-height: 1.6;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            font-size: 1.2em;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+        }
+
+        /* Confetti styling */
+        .confetti {
+            position: fixed;
+            top: -10px;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            background: #fff;
+            opacity: 0.8;
+            animation: confetti 4s linear infinite;
+        }
+
+        /* Confetti positions */
+        .confetti:nth-child(1) {
+            left: 10%;
+            animation-duration: 3s;
+        }
+        .confetti:nth-child(2) {
+            left: 20%;
+            animation-duration: 3.5s;
+            animation-delay: 1s;
+        }
+        .confetti:nth-child(3) {
+            left: 30%;
+            animation-duration: 4s;
+        }
+        .confetti:nth-child(4) {
+            left: 40%;
+            animation-duration: 4.5s;
+            animation-delay: 0.5s;
+        }
+        .confetti:nth-child(5) {
+            left: 50%;
+            animation-duration: 3.8s;
+            animation-delay: 0.8s;
+        }
+        .confetti:nth-child(6) {
+            left: 60%;
+            animation-duration: 3.2s;
+            animation-delay: 1.2s;
+        }
+        .confetti:nth-child(7) {
+            left: 70%;
+            animation-duration: 4.1s;
+        }
+        .confetti:nth-child(8) {
+            left: 80%;
+            animation-duration: 3.7s;
+            animation-delay: 0.3s;
+        }
+        .confetti:nth-child(9) {
+            left: 90%;
+            animation-duration: 3.6s;
+            animation-delay: 1.4s;
+        }
+
+        /* Scroll animation */
+        #birthday {
+            font-size: 2em;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 15px;
+            animation: frame 1.5s ease-out infinite alternate;
+            width: 80%;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday, Shalom!</h1>
+    <!-- Confetti -->
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+
+    <img width="350" src="e0a5dc4dfeda45c8a787248528cacda7.jpg" alt="Le sourire ✨ ナイス" />
+    <p>
+        Une enfant très turbulente, agressive et qui parle trop et qui cherche toujours à contredire son merveilleux et génial cousin. 
+        De plus, elle est toujours en train de chercher des positions rocambolesques pour prendre des photos 
+        <img width="100" height="100" src="eba3cb37f53445a3bdef516d860a4117.jpg" alt="Shalom dans une position de photo normale" />
+        (par ailleurs elle croit que ses photos sont graves jolies, or si ce n'est pas elle-même et puis la caméra, il n’y a rien). 
+        Sans parler du fait qu'elle se prend trop pour la photographe du siècle alors que c'est juste ses sujets qui sont trop photogéniques. 
+        Aussi, très important de noter que c'est une manipulatrice très avancée. Eh oui, elle m'a d'ailleurs déjà embobiné plus d'une fois et j'en suis peu fier. 
+        Sérieusement, regardez sa tête : 
+        <br /><img width="300" src="345cc80fd03344108b498189e1519e00.jpg" alt="Shalom avec une tête chelou " /> 
+        Comment celle-là va me blaguer et puis je vais tomber dedans ?
+        <br><br>
+        Mais bon, malgré tout ça, c'est quand même une chic fille sur qui on peut compter (des fois et faut pas croire qu'elle est d'une grande aide non plus), 
+        elle fait attention aux autres (y paraît) et aime beaucoup sa famille (je dis ça mais j'en sais rien en vrai). Une chrétienne fervente 💪😎 
+        qui œuvre pour le bien des autres (bof hein) à tel point qu'elle a carrément décidé d'étudier la santé des gens (ou un truc comme ça, me demandez pas moi-même j'en ai aucune idée). 
+        Bref, c'est une occasion spéciale qui m'a poussé à faire un paragraphe entier de compliments pour une personne que de base je préfère emmerder. 
+        Longue vie à toi et que Dieu te bénisse, même si j'en ai rien à foutre 🌟🌟✨🙌🎉💯🔥❤️‍🔥.
+    </p>
+
+    <!-- Birthday scroll animation -->
+    <div id="birthday">🎂 🎉 Joyeux anniversaire, Shalom! 🎉 🎂</div>
+</body>
+</html>

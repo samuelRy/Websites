@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>I'm so sorry</title>
+        <style>
+        @keyframes frame{
+            from{
+                transform: translateY(-15px);
+                opacity: 0;
+            }
+            to{
+                transform: translateY(0);
+                opacity: 1;
+                
+            }
+        }
+            html, body {
+                height: 100%;
+                margin: 0;
+            }
+            body {
+                animation: frame 1s ease-in-out;
+                font-size: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                background: linear-gradient(to bottom right, #d83dda, #da3d59, #5cb7f6);
+                background-size: cover;
+                height: 100%;
+            }
+            #first {
+                margin: 2px;
+                color: #e1d949;
+            }
+            #second {#9c2525
+                margin: 2px;
+                color: #35e401;
+            }
+            #third {
+                margin: 2px;
+                color: #30d1c8;
+            }
+            #fourth {
+                margin: 2px;
+                color: #5250f7;
+            }
+            h1
+            {
+                color: #9c2525;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>I'm sorry</h1>
+        <div id="first">
+            Whatever you think I did, I'm innocent.
+        </div>
+        <div id="second" class="hh">
+            I swear it, I'm pure. Even God knows I didn't do anything bad 🤧
+        </div>
+        <div id="third" class="hh">
+            You know I'm a good guy. And I did nothing behind your back. This sweet letter is the proof that I'm not a bad person.
+        </div>
+        <div id="fourth" class="hh">
+            And if I did something wrong, I sincerely apologize for that. I didn't do it on purpose. May God punish me if I'm lying 😔.
+        </div>
+        <div id="fifth">
+            My email to write to me: <a href="mailto: elijahsamuelbarkah@gmail.com?subject=feedback">email me</a><br />
+            my number: <a href="#">+229 91381177</a>
+        </div>
+        <script type="text/javascript" charset="utf-8">
+        document.getElementById("first").style="opacity:0;";
+        document.getElementById("second").style="opacity:0;";
+        document.getElementById("third").style="opacity:0;";
+        document.getElementById("fourth").style="opacity:0;";
+        document.getElementById("fifth").style="opacity:0;";
+            setTimeout(function(){document.getElementById("first").style="animation: frame 1s ease-in-out;"}, 3000);
+            setTimeout(function(){document.getElementById("second").style="animation: frame 1s ease-in-out;"}, 6000);
+            setTimeout(function(){document.getElementById("third").style="animation: frame 1s ease-in-out;"}, 10000);
+            setTimeout(function(){document.getElementById("fourth").style="animation: frame 1s ease-in-out;"}, 13000);
+            setTimeout(function(){document.getElementById("fifth").style="animation: frame 1s ease-in-out;"}, 16000);
+        </script>
+    </body>
+</html>
