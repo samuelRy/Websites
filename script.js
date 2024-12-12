@@ -72,3 +72,14 @@ generateConfetti();
     revealOnScroll();
     window.addEventListener('scroll', revealOnScroll);
 });
+document.getElementById('start-audio').style.display = 'block'; // Show the button for user interaction
+
+        document.getElementById('start-button').addEventListener('click', function () {
+            // Unmute and play the audio when the user clicks
+            const audio = document.getElementById('backgroundmusic');
+            audio.muted = false; // Unmute the audio
+            audio.play(); // Start the audio
+
+            // Hide the button after interaction
+            document.getElementById('start-audio').style.display = 'none';
+        });
