@@ -125,6 +125,35 @@
             width: 80%;
             text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
         }
+        .hhd
+        {
+            display: flex;
+            align-items: center;
+        }
+        a
+        {
+            display: flex;
+            width: 50px;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            line-height: 100px;
+            border: 5px solid  #35f40051;
+            border-radius: 50%;
+            text-decoration: none;
+            transform-origin: center center;
+            font-weight: bold;
+            background-color: green;
+        }
+        a span
+        {
+            position: absolute;
+            width: 5px;
+            text-align: center;
+            font-size: 5px;
+            transition: transform 0.3s ease;
+        }
     </style>
 </head>
 <body>
@@ -160,6 +189,25 @@
     </p>
 
     <!-- Birthday scroll animation -->
-    <div id="birthday">🎂 🎉 Joyeux anniversaire, Shalom! 🎉 🎂</div>
+    <div id="birthday">🎂 🎉 Joyeux anniversaire, Shalom! 🤧 🎉 🎂</div>
+    
+    
+    
+    <div class="hhd">Brefffffff, next part. Click here --> <a id="circle-text" href="photos.html"></a></div>
+    <script type="text/javascript" charset="utf-8">
+        const text="Oh My My";
+        const circleText = document.getElementById("circle-text");
+        const radius = 15;
+        const angleStep = 360/text.length;
+        
+        text.split('').forEach((char, index) =>{
+            const span = document.createElement('span');
+            span.textContent = char;
+            
+            const angle = angleStep * index;
+            span.style.transform = `rotate(${angle}deg) translateY(-${radius}px) rotate(-${angle}deg)`
+            circleText.appendChild(span);
+        });
+    </script>
 </body>
 </html>
